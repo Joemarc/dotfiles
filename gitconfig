@@ -48,4 +48,8 @@
   mergeoptions = --no-edit
 [user]
 	email = joe.marc3@gmail.com
-	name = Joe Marc
+	name = joemarc
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
